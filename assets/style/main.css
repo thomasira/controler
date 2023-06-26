@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: whitesmoke;
+    box-sizing: border-box;
+}
+body{
+    margin: 50px;
+    background-color: rgb(0, 0, 0);
+}
+.control{
+    opacity: 0.05;
+    position: absolute;
+    background-color: whitesmoke;
+    border-radius: 100%;
+    aspect-ratio: 1/1;
+    z-index: 5;
+
+}
+.grid{
+    margin: auto;
+    width: max-content;
+    position: relative;
+    display: grid;
+    grid-template-areas: 
+        "0 1"
+        "2 3";
+    row-gap: 300px;
+    column-gap: 800px;
+}
+
+.trigger-box{
+    background-color: rgba(4, 4, 4, 0.544);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid whitesmoke;
+}
+.targetBgrd{
+    position: absolute;
+    transition-duration: .5s, .5s;
+    transition-property: width, height;
+    z-index: -1;
+}
+.target:hover{
+    cursor: pointer;
+}
+img{
+    height: 100%;
+    width: 100%;
+    inset: 0;
+    object-fit: cover;
+}
